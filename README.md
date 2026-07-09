@@ -29,79 +29,58 @@
 
 Из корня проекта:
 
-```cmd
-.\run-all.cmd
+```sh
+./scripts/run-all.sh
 ```
 
 Сравнить старый и новый подход:
 
-```cmd
-.\run-compare.cmd
-```
-
-То же самое из POSIX shell, Git Bash или WSL:
-
 ```sh
-./run-compare.sh
-```
-
-То же самое через PowerShell напрямую:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run-all.ps1
+./scripts/run-compare.sh
 ```
 
 Отдельный сценарий:
 
-```cmd
-.\run.cmd all-success
-.\run.cmd fail-fast
-.\run.cmd race
-.\run.cmd timeout
-.\run.cmd quorum
+```sh
+./scripts/run.sh all-success
+./scripts/run.sh fail-fast
+./scripts/run.sh race
+./scripts/run.sh timeout
+./scripts/run.sh quorum
 ```
 
 Отдельный сценарий в старой реализации:
 
-```cmd
-.\run-legacy.cmd all-success
-.\run-legacy.cmd fail-fast
-.\run-legacy.cmd race
-.\run-legacy.cmd timeout
-.\run-legacy.cmd quorum
+```sh
+./scripts/run-legacy.sh all-success
+./scripts/run-legacy.sh fail-fast
+./scripts/run-legacy.sh race
+./scripts/run-legacy.sh timeout
+./scripts/run-legacy.sh quorum
 ```
 
 Сравнение одного сценария:
 
-```cmd
-.\run-compare.cmd fail-fast
-```
-
-Shell-варианты тех же команд:
-
 ```sh
-./run.sh all-success
-./run-legacy.sh all-success
-./run-compare.sh fail-fast
-./compile.sh
+./scripts/run-compare.sh fail-fast
 ```
 
 Если JDK 26 не найден автоматически:
 
 ```sh
-JDK_HOME="/mnt/c/Program Files/Axiom/AxiomJDK-26" ./run-compare.sh
+JDK_HOME="/mnt/c/Program Files/Axiom/AxiomJDK-26" ./scripts/run-compare.sh
 ```
 
 Компиляция без запуска:
 
-```cmd
-.\compile.cmd
+```sh
+./scripts/compile.sh
 ```
 
 Переопределение JDK:
 
-```powershell
-.\scripts\run-all.ps1 -JdkHome "C:\Program Files\Axiom\AxiomJDK-26"
+```sh
+JDK_HOME="/mnt/c/Program Files/Axiom/AxiomJDK-26" ./scripts/run-all.sh
 ```
 
 ## Сценарии

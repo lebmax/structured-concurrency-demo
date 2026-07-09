@@ -241,12 +241,12 @@ public final class StructuredConcurrencyDemo {
 
     private static void printUsage() {
         System.out.println("Usage:");
-        System.out.println("  run.ps1 all");
-        System.out.println("  run.ps1 all-success");
-        System.out.println("  run.ps1 fail-fast");
-        System.out.println("  run.ps1 race");
-        System.out.println("  run.ps1 timeout");
-        System.out.println("  run.ps1 quorum");
+        System.out.println("  ./scripts/run.sh all");
+        System.out.println("  ./scripts/run.sh all-success");
+        System.out.println("  ./scripts/run.sh fail-fast");
+        System.out.println("  ./scripts/run.sh race");
+        System.out.println("  ./scripts/run.sh timeout");
+        System.out.println("  ./scripts/run.sh quorum");
     }
 
     private record ProfilePart(String source, String value) {
@@ -326,4 +326,3 @@ public final class StructuredConcurrencyDemo {
         }
     }
 }
-

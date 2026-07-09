@@ -355,12 +355,12 @@ public final class ExecutorServiceDemo {
 
     private static void printUsage() {
         System.out.println("Usage:");
-        System.out.println("  run-legacy.ps1 all");
-        System.out.println("  run-legacy.ps1 all-success");
-        System.out.println("  run-legacy.ps1 fail-fast");
-        System.out.println("  run-legacy.ps1 race");
-        System.out.println("  run-legacy.ps1 timeout");
-        System.out.println("  run-legacy.ps1 quorum");
+        System.out.println("  ./scripts/run-legacy.sh all");
+        System.out.println("  ./scripts/run-legacy.sh all-success");
+        System.out.println("  ./scripts/run-legacy.sh fail-fast");
+        System.out.println("  ./scripts/run-legacy.sh race");
+        System.out.println("  ./scripts/run-legacy.sh timeout");
+        System.out.println("  ./scripts/run-legacy.sh quorum");
     }
 
     private record ProfilePart(String source, String value) {
@@ -372,4 +372,3 @@ public final class ExecutorServiceDemo {
     private record ReplicaReply(String replica, String payload) {
     }
 }
-
